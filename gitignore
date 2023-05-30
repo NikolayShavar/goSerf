@@ -45,7 +45,7 @@ sftp-config.json
 ftp.json
 logs/*
 !.gitkeep
-tmp
+/tmp
 package-lock.json
 
 .deploy
@@ -56,7 +56,6 @@ package-lock.json
 TODO
 CheckList
 /local
-/app
 faviconData.json
 src/assets/css/critical/critical.css
 env.js
