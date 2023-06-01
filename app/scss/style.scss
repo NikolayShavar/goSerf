@@ -3,6 +3,11 @@
 @import "_fonts";
 @import "_global";
 
+.header{
+  position: relative;
+  height: 100vh;
+}
+
 .header__slider {
   &-item {
     height: 100vh;
@@ -55,6 +60,20 @@ margin-bottom: 20px;
 
 .slider-arrows__left{
 right: 125px;
+}
+.slider-dots{
+  position: absolute;
+  right: 80px;
+  bottom: 40px;
+ max-width: 920px;
+ width: 100%;
+ color: #fff;
+}
+.dots-box{
+  width: 200px;
+  display: flex;
+  justify-content:space-between;
+  height: 28;
 }
 
 @import "media";
