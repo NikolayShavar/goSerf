@@ -19,7 +19,29 @@
   right: 80px;
   bottom: 116px;
   text-align: right;
+  color: #fff;
 }
 
+.slider-item__info-suptitle {
+  margin-bottom: 5px;
+}
+.slider-item__info-suptext {
+  margin-bottom: 8px;
+}
+
+.slider-item__info-title {
+  font-weight: 800;
+  font-size: 80px;
+  line-height: 86px;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+
+.slider-item__info-text {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 86px;
+  text-transform: uppercase;
+}
 
 @import "media";
