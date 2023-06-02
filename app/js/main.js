@@ -9,7 +9,7 @@ $(function () {
     asNavFor: ".slider-dots",
   });
 
-  $("slider-dots").slick({
+  $(".slider-dots").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
     asNavFor: ".header_slider",

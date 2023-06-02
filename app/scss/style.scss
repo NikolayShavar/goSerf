@@ -68,6 +68,12 @@ right: 125px;
  max-width: 920px;
  width: 100%;
  color: #fff;
+
+ &__item {
+	&.slick-current {
+		color: red;
+	}
+ }
 }
 .dots-box{
   width: 200px;
