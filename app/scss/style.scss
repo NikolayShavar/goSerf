@@ -149,11 +149,10 @@
     display: block;
   }
 }
-.header__search{
-padding-top: 15px;
-padding-bottom: 35px;
+.header__search {
+  padding-top: 15px;
+  padding-bottom: 35px;
 }
-
 
 .header__location {
   display: inline-block;
@@ -173,13 +172,13 @@ padding-bottom: 35px;
     top: 0;
   }
 }
-.header__map{
+.header__map {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 3;
 }
-.header__arrows{
+.header__arrows {
   position: absolute;
   left: 210px;
   bottom: 40px;
