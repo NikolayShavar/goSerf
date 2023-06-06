@@ -12,6 +12,6 @@ $(function () {
   $(".slider-dots").slick({
     slidesToShow: 4,
     slidesToScroll: 4,
-    asNavFor: ".header_slider",
+    asNavFor: ".header__slider",
   });
 });
