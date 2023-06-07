@@ -1,8 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
+html{
   box-sizing: border-box;
 }
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+} 
+// {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
 header,
 body {
@@ -26,7 +35,7 @@ li {
   padding: 0;
 }
 
-.suptitle-left {
+.headline-left {
   display: inline-block;
   font-size: 22px;
   line-height: 32px;
@@ -46,6 +55,10 @@ li {
     top: 50%;
   }
 }
+.container{
+  max-width: 1920px;
+  margin: 0 auto;
+}
 
 .title1 {
   span {
@@ -53,6 +66,8 @@ li {
     color: rgba(#fff, 0.02);
     font-weight: 800;
     position: relative;
+    transform: translateX(-50px);
+    display: inline-block;
   }
   h3 {
     position: absolute;
