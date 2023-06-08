@@ -66,6 +66,10 @@
   max-width: 920px;
   width: 100%;
   text-transform: capitalize;
+
+  .slick-track {
+	transform: none !important;
+  }
 }
 .dots-box {
   width: 200px;
@@ -75,6 +79,8 @@
   align-items: center;
   border-top: 4px solid #fff;
   padding-top: 6px;
+  cursor: pointer;
+
   &__number {
     font-weight: 800;
     font-size: 24px;
