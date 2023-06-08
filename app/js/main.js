@@ -11,7 +11,10 @@ $(function () {
 
   $(".slider-dots").slick({
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
+	arrows: false,
+	dots: false,
     asNavFor: ".header__slider",
+	focusOnSelect: true,
   });
 });
