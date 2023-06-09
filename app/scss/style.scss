@@ -186,7 +186,7 @@
   z-index: 3;
 }
 .serf {
-  padding: 160px 0 210px;
+  padding: 160px 0 120px;
   background-image: url(../images/poi.png);
   background-position: right 200px;
   background-repeat: no-repeat;
@@ -199,10 +199,19 @@
 }
 .serf-slider {
   padding-top: 110px;
-
   .slider-arrows {
     top: 50px;
     opacity: 0.25;
+  }
+  .slick-slide:nth-child(4n + 1) {
+    .serf-box {
+      margin-top: 32px;
+    }
+  }
+  .slick-slide:nth-child(4n + 3) {
+    .serf-box {
+      margin-top: 89px;
+    }
   }
 }
 
@@ -230,11 +239,22 @@
   letter-spacing: 8px;
   font-size: 18px;
   transform: rotate(-90deg);
+  position: absolute;
+  left: 40px;
+  bottom: 80px;
+  width: 0;
+  height: 0;
+  white-space: nowrap;
   span {
     font-weight: 100;
   }
 }
 .serf-box__inner-btn {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  right: 0;
 }
 
 @import "media";
