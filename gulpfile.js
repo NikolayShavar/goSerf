@@ -96,7 +96,7 @@ function watching() {
   });
   watch(["app/scss/*.scss"], styles);
   watch(["app/images/src"], images);
-  watch(["app/js/*.js"], scripts);
+  watch(["app/js/main.js"], scripts);
   watch(["app/components/*", "app/pages/*"], pages);
   watch(["app/*.html"]).on("change", browserSync.reload); //отображает изменения в браузере
 }

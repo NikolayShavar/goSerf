@@ -6,10 +6,10 @@ $(function () {
       '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg"/>',
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg"/>',
-    asNavFor: ".slider-dots",
+    asNavFor: ".slider-dotshead",
   });
 
-  $(".slider-dots").slick({
+  $(".slider-dotshead").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     arrows: false,
@@ -27,5 +27,14 @@ $(function () {
       '<img class="slider-arrows slider-arrows__left" src="images/arrows-left.svg"/>',
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg"/>',
+    asNavFor:'.slider-map',
+    });
+
+  $(".slider-map").slick({
+    slidesToShow: 8,
+    slidesToScroll: 1,
+    arrows: false,
+    focusOnSelect: true,
+    asNavFor:'.serf-slider',
   });
 });
