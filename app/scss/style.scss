@@ -506,7 +506,8 @@ position: relative;
   line-height: 36px;
   font-weight: 800;
   padding-left: 40px;
-  span{
+  position: relative;
+  .holder-pricing__span{
     font-size: 14px;
     line-height: 0;
     text-align: right;
@@ -514,7 +515,7 @@ position: relative;
     opacity: 0.75;
     font-weight: 400;
     position: absolute;
-    bottom: -8px;
+    top: 50px;
     right: 0;
   }
 }
