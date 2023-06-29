@@ -56,7 +56,7 @@ li {
   }
 }
 
-.headline-right{
+.headline-right {
   display: inline-block;
   font-size: 22px;
   line-height: 32px;
@@ -121,14 +121,14 @@ li {
     }
   }
 }
-.descr{
+.descr {
   display: inline-block;
   padding-left: 5px;
-  &__head{
+  &__head {
     font-weight: 800;
     font-size: 40px;
-    span{
-font-weight: 100;
+    span {
+      font-weight: 100;
     }
   }
 }
@@ -168,40 +168,39 @@ font-weight: 100;
 }
 
 .surf,
-.holder{
+.holder {
   padding: 160px 0 120px;
 }
-.holder{
+.holder {
   padding-bottom: 265px;
   margin-bottom: 35px;
 }
 
 .quantity {
-display: inline-block;
+  display: inline-block;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button
-{
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type=number]
-{
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
 .quantity input {
+  font-size: 40px;
   width: 45px;
   height: 42px;
-  line-height: 1.65;
-  float: left;
   display: block;
-  padding: 0;
-  margin: 0;
-  padding-left: 20px;
-  border: 1px solid #eee;
+  border: none;
+  background-color: transparent;
+  font-size:40px;
+  line-height: 36px;
+  font-weight: 800;
+  color: #fff;
 }
 
 .quantity input:focus {
@@ -211,37 +210,29 @@ input[type=number]
 .quantity-nav {
   float: left;
   position: relative;
+  position: static;
   height: 42px;
 }
 
 .quantity-button {
   position: relative;
   cursor: pointer;
-  border-left: 1px solid #eee;
   width: 20px;
-  text-align: center;
-  color: #333;
-  font-size: 13px;
-  font-family: "Trebuchet MS", Helvetica, sans-serif !important;
-  line-height: 1.7;
-  -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 45px;
 }
 
 .quantity-button.quantity-up {
   position: absolute;
-  height: 50%;
-  top: 0;
-  border-bottom: 1px solid #eee;
+
+  right: 0;
 }
 
 .quantity-button.quantity-down {
   position: absolute;
-  bottom: -1px;
-  height: 50%;
+
+  right: 25px;
 }
