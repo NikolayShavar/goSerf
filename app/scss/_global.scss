@@ -21,6 +21,7 @@ body {
   background-color: #171919;
   color: #fff;
   text-transform: uppercase;
+  margin: 0;
 }
 a {
   display: inline-block;
@@ -197,7 +198,7 @@ input[type="number"] {
   display: block;
   border: none;
   background-color: transparent;
-  font-size:40px;
+  font-size: 40px;
   line-height: 36px;
   font-weight: 800;
   color: #fff;
@@ -235,4 +236,10 @@ input[type="number"] {
   position: absolute;
 
   right: 25px;
+}
+.star-list {
+  li {
+    display: inline-block;
+    margin-left: -25px;
+  }
 }
