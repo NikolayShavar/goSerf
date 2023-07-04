@@ -38,7 +38,7 @@ $(function () {
     asNavFor: ".surf-slider",
   });
 
-  $(".holder__slider").slick({
+  $(".holder__slider, .shop__slider").slick({
     infinite: true,
     fade: true,
     prevArrow:
@@ -81,11 +81,11 @@ $(function () {
     });
   });
 
-  $(".quantity-button").on("click", function (){
+  $(".quantity-button").on("click", function () {
     let summ =
       $(".nights").val() * $(".summ").data("nights") +
       ($(".guests").val() - 1) * $(".summ").data("guests");
-      $(".summ").html("$" + summ);
+    $(".summ").html("$" + summ);
   });
 
   let summ =
@@ -93,4 +93,8 @@ $(function () {
     ($(".guests").val() - 1) * $(".summ").data("guests");
 
   $(".summ").html("$" + summ);
+
+  $(".surfboard-box__circle").on("click", function () {
+    $(this).toggleClass("active");
+  });
 });
