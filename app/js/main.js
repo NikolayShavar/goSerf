@@ -97,4 +97,7 @@ $(function () {
   $(".surfboard-box__circle").on("click", function () {
     $(this).toggleClass("active");
   });
+  $('.menu-btn').on('click', function(){
+$('.menu').toggleClass('active');
+  });
 });
