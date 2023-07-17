@@ -7,6 +7,7 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg"/>',
     asNavFor: ".slider-dotshead",
+
   });
 
   $(".slider-dotshead").slick({
@@ -16,6 +17,13 @@ $(function () {
     dots: false,
     asNavFor: ".header__slider",
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: "unslick",
+      }
+    ]
+ 
   });
 
   $(".surf-slider").slick({
@@ -28,6 +36,20 @@ $(function () {
     nextArrow:
       '<img class="slider-arrows slider-arrows__right" src="images/arrows-right.svg"/>',
     asNavFor: ".slider-map",
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   });
 
   $(".slider-map").slick({
@@ -36,6 +58,20 @@ $(function () {
     arrows: false,
     focusOnSelect: true,
     asNavFor: ".surf-slider",
+    responsive: [
+      {
+        breakpoint: 1103,
+        settings: {
+          slidesToShow: 3,
+        }
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        }
+      }
+    ]
   });
 
   $(".holder__slider, .shop__slider").slick({
