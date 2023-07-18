@@ -90,86 +90,6 @@
   }
 }
 
-@media (max-width: 1040px) {
-  .header__arrows {
-    display: none;
-  }
-  .menu {
-    background-color: #000;
-    z-index: 22;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateX(-100%);
-    right: 0;
-    bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 16px;
-    transition: all 0.5s;
-    &.active {
-      transform: translateX(0);
-    }
-  }
-  .menu-btn {
-    display: flex;
-  }
-
-  .header__search {
-    padding: 40px 15px 15px;
-  }
-  .slider-item__info {
-    position: absolute;
-    right: 20px;
-    bottom: 17px;
-    text-align: right;
-  }
-  .slider-item__info-text {
-    font-size: 30px;
-    line-height: 20px;
-    margin-bottom: 15px;
-  }
-  .headline-left {
-    font-size: 16px;
-    line-height: 18px;
-    padding-left: 65px;
-  }
-  .slider-item__info-suptext {
-    margin-bottom: 5px;
-  }
-  .headline-left::before {
-    width: 50px;
-  }
-  .slider-item__info-title {
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-  .slider-item__info-title {
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 800;
-    margin-bottom: 20px;
-  }
-  .slider-dotshead {
-    right: 0;
-    left: 10px;
-    margin: 0 auto;
-    bottom: 5px;
-  }
-  .dots-box {
-    width: 125px;
-  }
-  .dots-box__number {
-    font-size: 18px;
-  }
-  dots-box__name {
-    line-height: 18px;
-  }
-}
-
 @media (max-width: 1250px) {
   .slider-map {
     max-width: 1000px;
@@ -250,6 +170,90 @@
     background: rgba(#ccc, 0.7);
   }
 }
+
+@media (max-width: 1040px) {
+  .header__arrows {
+    display: none;
+  }
+  .menu {
+    background-color: #000;
+    z-index: 22;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 16px;
+    transition: all 0.5s;
+    &.active {
+      transform: translateX(0);
+    }
+  }
+  .menu-btn {
+    display: flex;
+  }
+
+  .header__search {
+    padding: 40px 15px 15px;
+  }
+  .slider-item__info {
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    text-align: right;
+  }
+  .slider-item__info-text {
+    font-size: 30px;
+    line-height: 20px;
+    margin-bottom: 15px;
+  }
+  .headline-left {
+    font-size: 16px;
+    line-height: 18px;
+    padding-left: 65px;
+  }
+  .slider-item__info-suptext {
+    margin-bottom: 5px;
+  }
+  .headline-left::before {
+    width: 50px;
+  }
+  .slider-item__info-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .slider-item__info-title {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+  .slider-dotshead {
+    right: 0;
+    left: 10px;
+    margin: 0 auto;
+    bottom: 5px;
+  }
+  .dots-box {
+    width: 125px;
+  }
+  .dots-box__number {
+    font-size: 18px;
+  }
+  dots-box__name {
+    line-height: 18px;
+  }
+  .surf__subtitle {
+    padding-right: 20px;
+  }
+}
+
 @media (max-width: 960px) {
   .slider-dotshead {
     display: none;
@@ -257,6 +261,35 @@
 }
 
 @media (max-width: 767px) {
+}
+
+@media (max-width: 720px) {
+  .title1 {
+    span {
+      font-size: 100px;
+      padding-bottom: 80px;
+      padding-left: 10px;
+    }
+  }
+  .surf-slider .slider-arrows{
+    top:20px;
+  }
+  .surf-slider {
+    padding-top: 65px;
+  }
+  .surf, .holder {
+    padding: 70px 0 120px;
+  }
+}
+
+@media (max-width: 520px) {
+  .headline-left {
+    letter-spacing: 2.33333px;
+  }
+  .subtitle__head {
+    font-size: 32px;
+    padding-right: 0;
+  }
 }
 
 @media (max-width: 460px) {
@@ -282,5 +315,23 @@
   }
   .header__title {
     display: none;
+  }
+}
+
+@media (max-width: 425px) {
+  .slider-map  .slider-dots__content,
+  .slider-map .slick-current .slider-dots__content {
+
+    width: 250px;
+    padding: 28px 15px 0;
+  }
+}
+
+@media (max-width: 374px) {
+  .slider-map  .slider-dots__content,
+  .slider-map .slick-current .slider-dots__content {
+    display: block;
+    width: 200px;
+    padding: 28px 10px 0;
   }
 }
